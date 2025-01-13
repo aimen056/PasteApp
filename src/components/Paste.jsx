@@ -58,20 +58,19 @@ const Paste = () => {
                     </p>
                     <div className="flex flex-col gap-4 sm:flex-row  justify-evenly sm:w-full">
                       {/* Edit Button */}
-                      <NavLink to={`/?pasteId=${paste?._id}`}>
-                      <button className="bg-black justify-center text-[#646cff] py-2 px-4 flex items-center space-x-2">
+                      <NavLink className="bg-black justify-center text-[#646cff] py-2 px-4 flex items-center space-x-2 rounded-lg" to={`/?pasteId=${paste?._id}`}>
                         <AiFillEdit />
                         <span className="inline">Edit</span>
-                      </button>
+                      
                       </NavLink>
 
                       {/* View Button */}
-                      <NavLink to={`/pastes/${paste?._id}`}>
+                      <NavLink className="bg-black justify-center text-[#646cff] py-2 px-4 flex items-center space-x-2 rounded-lg" to={`/pastes/${paste?._id}`}>
 
-                      <button className="bg-black justify-center text-[#646cff] py-2 px-4 flex items-center space-x-2">
+                      
                         <AiFillEye />
                         <span className="inline">View</span>
-                      </button>
+                     
                       </NavLink>
 
                       {/* Delete Button */}

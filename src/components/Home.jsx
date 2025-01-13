@@ -63,7 +63,7 @@ const Home = () => {
         <textarea
           id="paste-text"
           onChange={(e) => setValue(e.target.value)}
-          rows={15}
+          rows={18}
           value={value}
           placeholder="Enter text here"
           className="bg-[#0d0d0d] p-2 w-full rounded-lg"
