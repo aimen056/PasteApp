@@ -1,0 +1,49 @@
+/* Container for the entire app */
+#app-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%; /* Make the container full width */
+  max-width: 1200px; /* Max width to ensure it's not too wide on large screens */
+  margin: 0 auto;
+  padding: 10px; /* Add some padding for mobile view */
+}
+
+/* Particle container (background layer) */
+#particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Content container (foreground layer) */
+#content-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #e2e4ff;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%; /* Full width */
+  max-width: 800px; /* Max width for content */
+}
+
+/* For small screens, allow scrolling */
+@media screen and (max-width: 768px) {
+  #app-container {
+    overflow-y: scroll; /* Enable vertical scrolling on small screens */
+    height: auto; /* Adjust height to content size */
+  }
+}
