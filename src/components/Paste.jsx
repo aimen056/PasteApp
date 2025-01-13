@@ -98,7 +98,7 @@ const Paste = () => {
                       <button
                         className="bg-black justify-center text-[#646cff] py-2 px-4 flex items-center space-x-2"
                         onClick={() => {
-                          const shareableURL = `http://localhost:5173/pastes/${paste?._id}`;
+                          const shareableURL = `https://paste-app-theta-seven.vercel.app/pastes/${paste?._id}`;
                           navigator.clipboard
                             .writeText(shareableURL)
                             .then(() =>
